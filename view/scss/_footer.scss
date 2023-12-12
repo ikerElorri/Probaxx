@@ -1,0 +1,131 @@
+@import '_variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.footer {
+  margin-top: $margen-arriba-footer;
+  position: relative;
+  width: $ancho-footer;
+  background: $gris-claro;
+  min-height: $altura-minima-footer;
+  padding: $padding-footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: $margin-menu-footer;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: $blanco;
+  margin: $margen-iconos-footer;
+  display: inline-block;
+  transition: $transicion-animacion-iconos-footer;
+}
+
+.social-icon__link:hover {
+  transform: $animacion-hover-iconos-footer;
+  color: $gris;
+}
+
+.menu__link {
+  font-size: $tamanio-letra-link-menu-footer;
+  color: $blanco;
+  margin: $margen-link-menu-footer;
+  display: inline-block;
+  transition: $transiscion-menu-link-footer;
+  text-decoration: none;
+  opacity: $opacidad-menu-link-footer;
+  font-weight: $anchura-de-letras-menu-link-footer;
+}
+
+.menu__link:hover {
+  opacity: $opacidad-hover-menu-link;
+  color: $gris;
+}
+
+.footer p {
+  color: $blanco;
+  margin: $margin-footer-texto;
+  font-size: $tamanio-letra-footer-texto;
+  font-weight: $anchura-letras-footer-texto;
+}
+
+.wave {
+  position: absolute;
+  top: $ola-distancia-respecto-arriba;
+  left: $ola-distancia-respecto-izq;
+  width: $ancho-ola;
+  height: $alto-ola;
+  background: url("../img/wave1.png");
+  background-size: $tamanio-background_ola;
+}
+
+.wave#wave1 {
+  z-index: $ola1-zindex;
+  opacity: $ola1-opacidad;
+  bottom: $ola1-distancia-abajo;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: $ola2-zindex;
+  opacity: $ola2-opacidad;
+  bottom: $ola2-distancia-abajo;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: $ola3-zindex;
+  opacity: $ola3-opacidad;
+  bottom: $ola3-distancia-abajo;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: $ola4-zindex;
+  opacity: $ola4-opacidad;
+  bottom: $ola4-distancia-abajo;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+
+  100% {
+    background-positon-x: 0px;
+  }
+}

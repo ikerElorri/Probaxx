@@ -1,0 +1,83 @@
+<html ng-app="miApp" lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/view/scss/pruebatabla.css">
+    <link rel="icon" href="/view/img/index/logofpzornotza.png">
+    <title>BancaOnline</title>
+</head>
+
+<body ng-controller="miControlador" class="margenPagina">
+    <center>
+        <h1>Simulador de prestamos</h1>
+    </center>
+    <div class="IntroducirDatosPrestamo">
+        <div id="datosPrestamos">
+            <p>Sistema de amortizacion:</p>
+            <select ng-model="tipoSimulacion" name="TipoAmortizacion" id="TipoAmortizacion">
+                <option value="Lineal">Lineal</option>
+                <option value="Frances">Frances</option>
+            </select>
+            <p>Duracion:</p>
+            <select name="Duracion" id="Duracion">
+                <option value="Anual">1 Año</option>
+                <option value="Semestral">2 Meses</option>
+            </select>
+            <p>Cantidad Meses/Años:</p>
+            <input ng-model="cantidad" type="text" />
+            <p>Capital:</p>
+            <input ng-model="capital" type="text" />
+            <p>Periodo de pago de interes:</p>
+            <select name="PeriodoInteres" id="PeriodoInteres" ng-model="pago_interese">
+                <option value="1">1 Año</option>
+                <option value="2">2 Meses</option>
+                <option value="3">3 Meses</option>
+                <option value="12">1 Mes</option>
+            </select>
+            <p>Tipo de base temporal:</p>
+            <select name="BaseTemporal" id="BaseTemporal" ng-model="temporal">
+                <option value="Anual">1 Año</option>
+                <option value="Semestral" ng-show="pago_interese==2">2 Meses</option>
+                <option value="Cuatrimestral" ng-show="pago_interese==3">3 Meses</option>
+                <option value="Mensual" ng-show="pago_interese==12">1 Mes</option>
+            </select>
+            <p>Tasa de interes:</p>
+            <input ng-model="intereses" type="text" />
+        </div>
+        <center><button class="botonCalcular" ng-click="Prestamo()">Calcular</button></center>
+
+    </div>
+
+    <center>
+        <div id="tablaPrestamos" ng-show="mostrarTabla == 'true'">
+            <center>
+                <h1>Resultado de la simulación</h1>
+            </center>
+            <table class="tablaPresta">
+                <tr>
+                    <td>PERÍODOS</td>
+                    <td>CUOTA</td>
+                    <td>INTERES</td>
+                    <td>AMORTIZACIÓN</td>
+                    <td>AMORT. ACUM.</td>
+                    <td>CAP. PENDIENTE</td>
+                </tr>
+                <tr ng-repeat="item in LISTA">
+                    <td class="td-zenb">{{item.Periodo}}</td>
+                    <td class="td-zenb">{{item.Kuota}}</td>
+                    <td class="td-zenb">{{item.InteresKuota}}</td>
+                    <td class="td-zenb">{{item.Amortizazioa}}</td>
+                    <td class="td-zenb">{{item.AmortizazioMetatua}}</td>
+                    <td class="td-zenb">{{item.CapitalPendiente}}</td>
+                </tr>
+            </table>
+        </div>
+    </center>
+
+    <script src="/view/js/tablas.js"></script>
+</body>
+
+</html>

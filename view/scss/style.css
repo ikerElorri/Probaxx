@@ -1,0 +1,670 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: "Century Gothic", "Lato", sans-serif;
+  font-size: 1rem;
+}
+
+header .navbar .container-fluid #navbar-logo img {
+  width: 190px;
+}
+header .navbar .container-fluid .collapse {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover,
+header .navbar .container-fluid .collapse .navbar-nav .nav-item:focus {
+  background-size: 100% 2px;
+}
+
+#imagenfondo {
+  height: 700px;
+  background-image: url("../img/imageninicio.jpg");
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#imagenfondo #textoinicio {
+  background-color: #fff;
+  padding: 20px;
+  width: 50%;
+}
+#imagenfondo h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+#imagenfondo p {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+}
+
+#sobre-nosotros {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+#sobre-nosotros a {
+  text-decoration: none;
+  color: black;
+}
+
+#login-box {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px 50px;
+}
+
+#login-box #imgLogin {
+  width: 250px;
+}
+
+#login-box .form .item input {
+  width: 200px;
+  border: 0;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  color: black;
+  padding: 5px 10px;
+}
+
+#login-box .form .item i {
+  color: black;
+  font-size: 18px;
+}
+
+#login-box button {
+  border: 0;
+  width: 150px;
+  height: 30px;
+  margin-top: 18px;
+  font-size: 18px;
+  color: black;
+  border-radius: 25px;
+  border: solid black 2px;
+}
+
+#titulo {
+  width: 100%;
+  text-align: center;
+}
+
+#sobrenosotrosInicio {
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/index/quienessomos.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+#sobrenosotrosInicio #infoSobrenosotros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 200px;
+}
+#sobrenosotrosInicio #infoSobrenosotros #sobrenosotrosLogo {
+  background-size: cover;
+}
+#sobrenosotrosInicio #infoSobrenosotros #textoinicioSobrenosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 50%;
+  border: solid black 1px;
+  text-align: center;
+}
+#sobrenosotrosInicio #infoSobrenosotros #textoinicioSobrenosotros #btnSobreNosotros {
+  width: 150px;
+  height: 30px;
+  margin-top: 18px;
+  font-size: 18px;
+  color: black;
+  border-radius: 25px;
+  border: solid black 2px;
+}
+
+.contenedoresinicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 10px;
+}
+.contenedoresinicio .contenedoresinicioizq {
+  display: flex;
+  justify-content: flex-start;
+}
+.contenedoresinicio .contenedoresinicioizq .texto {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 200px;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.468);
+  border: solid black 2px;
+  z-index: 3;
+}
+.contenedoresinicio .contenedoresinicioizq .imagen {
+  background-size: cover;
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  z-index: 2;
+}
+.contenedoresinicio .contenedoresinicioizq #hipoteca {
+  background-size: cover;
+  background-image: url("../img/index/hipoteca.jpg");
+}
+.contenedoresinicio .contenedoresinicioizq #targetas {
+  background-image: url("../img/index/targetas.jpg");
+}
+.contenedoresinicio .info {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  height: 100%;
+}
+
+.contenedoresinicio .contenedoresinicioder {
+  display: flex;
+  justify-content: flex-start;
+}
+.contenedoresinicio .contenedoresinicioder .texto {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: -100px;
+  width: 200px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.468);
+  border: solid black 2px;
+  z-index: 3;
+}
+.contenedoresinicio .contenedoresinicioder .imagen {
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+  z-index: 2;
+}
+.contenedoresinicio .contenedoresinicioder #renting {
+  background-size: cover;
+  background-image: url("../img/index/renting.jpg");
+}
+.contenedoresinicio .contenedoresinicioder #bizum {
+  background-size: cover;
+  background-image: url("../img/index/bizum.jpg");
+}
+.contenedoresinicio .info {
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  height: 100%;
+}
+
+#imagenfondoGuriBuruz {
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/GuriBuruz.jpg");
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#imagenfondoGuriBuruz #textoinicioguriburuz {
+  background-color: #fff;
+  padding: 20px;
+  width: 50%;
+}
+#imagenfondoGuriBuruz h1 {
+  font-family: "Century Gothic", "Lato", sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+#imagenfondoGuriBuruz p {
+  text-align: center;
+}
+
+#centrar {
+  display: flex;
+  justify-content: center;
+}
+#centrar #contenedorTexto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 50px;
+}
+#centrar #contenedorTexto .textoSobreNosotros {
+  font-family: "Century Gothic", "Lato", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#centrar #contenedorTexto .textoSobreNosotros .imgSobreNosotros {
+  width: 30%;
+  border-radius: 10px;
+}
+#centrar #contenedorTexto .textoSobreNosotros .textoSobreNosotros {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  width: 50%;
+}
+
+#logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logincontainer #login-boxlog {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 20px 50px;
+}
+#logincontainer #login-boxlog #imgLoginlog {
+  width: 80%;
+}
+#logincontainer #login-boxlog .formlog .itemlog input {
+  width: 80%;
+  border: 0;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  color: black;
+  padding: 5px 10px;
+}
+#logincontainer #login-boxlog .formlog .itemlog i {
+  color: black;
+  font-size: 18px;
+}
+#logincontainer #login-boxlog button {
+  border: 0;
+  width: 60%;
+  height: 30px;
+  margin-top: 18px;
+  font-size: 18px;
+  color: black;
+  border-radius: 25px;
+  border: solid black 2px;
+}
+#logincontainer a {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  margin-top: 200px;
+  position: relative;
+  width: 100%;
+  background: rgb(164, 164, 164);
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.social-icon__link:hover {
+  transform: translateY(-10px);
+  color: grey;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+  color: grey;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../img/wave1.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  -webkit-animation: animateWaves 4s linear infinite;
+          animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  -webkit-animation: animate 4s linear infinite !important;
+          animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  -webkit-animation: animateWaves 3s linear infinite;
+          animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  -webkit-animation: animate 3s linear infinite;
+          animation: animate 3s linear infinite;
+}
+
+@-webkit-keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+#containerformulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+#containerformulario #formularioSImulacion {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 40px;
+  width: 70%;
+}
+#containerformulario .table {
+  width: 70%;
+}
+
+@media (max-width: 1300px) {
+  #inforelevante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedoresinicio {
+    flex-direction: column;
+  }
+  .imagen {
+    display: none;
+  }
+  .contenedoresinicio .contenedoresinicioizq .texto {
+    display: none;
+  }
+  .contenedoresinicio .contenedoresinicioder .texto {
+    display: none;
+  }
+  .contenedoresinicio {
+    width: 70%;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-size: cover;
+  }
+  .info {
+    background-color: rgba(255, 255, 255, 0.468);
+    margin: 10px;
+  }
+  #contenedorhipoteca {
+    background-image: url("/view/img/index/hipotecav2.jpg");
+  }
+  #contenedorrenting {
+    background-image: url("/view/img/index/rentingv2.jpg");
+  }
+  #contenedortargetas {
+    background-image: url("/view/img/index/targetasv2.jpg");
+  }
+  #contenedorbizum {
+    background-image: url("/view/img/index/bizumv2.jpg");
+  }
+}
+@media (max-width: 800px) {
+  #logincontainer #login-boxlog {
+    width: 90%;
+  }
+  #logincontainer #login-boxlog #imgLoginlog {
+    width: 250px;
+  }
+}
+@media (max-width: 992px) {
+  #navbarNavDropdown {
+    display: none;
+  }
+  #login-box {
+    border: none;
+    width: 100%;
+  }
+  #centrar #contenedorTexto #textoSobreNosotros1 {
+    flex-direction: column;
+  }
+  #centrar #contenedorTexto #textoSobreNosotros2 {
+    flex-direction: column-reverse;
+  }
+  #centrar #contenedorTexto .textoSobreNosotros .imgSobreNosotros {
+    width: 90%;
+  }
+  #centrar #contenedorTexto .textoSobreNosotros .textoSobreNosotros {
+    width: 90%;
+  }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+    background-position: 0% 100%;
+  }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover,
+header .navbar .container-fluid .collapse .navbar-nav .nav-item:focus {
+    background-size: 115px 2px;
+  }
+}
+@media (max-width: 800px) {
+  #sobrenosotrosLogo {
+    display: none;
+  }
+  #sobrenosotrosInicio #infoSobrenosotros #textoinicioSobrenosotros #btnSobreNosotros {
+    margin-top: 0px;
+  }
+  #sobrenosotrosInicio #infoSobrenosotros #textoinicioSobrenosotros {
+    width: 90%;
+  }
+  .contenedoresinicio {
+    width: 100%;
+  }
+  #imagenfondo #textoinicio {
+    width: 90%;
+  }
+  #imagenfondoGuriBuruz #textoinicioguriburuz {
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  #imagenfondo h1 {
+    letter-spacing: 0;
+  }
+}
+#infousu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.usearios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 20px;
+  table-layout: fixed;
+  width: 405px;
+  background: white;
+}
+
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg .tg-baqh {
+  text-align: center;
+  vertical-align: top;
+}/*# sourceMappingURL=style.css.map */

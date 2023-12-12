@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="miApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="/view/scss/style.css">
+
+  <script src="/view/lib/angular.min.js" type="text/javascript"></script>
+  <script src="/view/js/simulacion.js" type="text/javascript"></script>
+  <script src="/view/js/login.js"></script>
+
+  <link rel="icon" href="/view/img/index/logofpzornotza.png">
+  <title>BancaOnline</title>
+</head>
+
+<body ng-controller="simulacion">
+
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light p-1" id="navbar">
+        <div class="container-fluid">
+
+            <a id="navbar-logo" href="/view/index.html">
+                <img src="/view/img/FP-Zornotza-logo-color.jpg" alt="">
+            </a>
+
+            <a id="log" href="">
+                <img src="" alt="" style="width: 30px;">
+            </a>
+
+            <button class="navbar-toggler" id="botonnavbar" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/view/index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="banOnline" class="nav-link active" href="/view/paginas/banca.html">Banca Online</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/view/paginas/GuriBuruz.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item" id="Admin" style="display:none;">
+                        <a class="nav-link active"  href="/view/paginas/bancaAdmin.html">Admin</a>
+                    </li>
+                    <li class="nav-item" id="useer" style="display:none;">
+                        <a class="nav-link active" href="/view/paginas/usuario.html">Cuenta</a>
+                    </li>
+                    <li class="nav-item" id="logout" style="display:none; cursor: pointer">
+                        <a class="nav-link active">Cerrar Sesion</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <ul class="navbar-nav me-auto mbn -2 mb-lg-0">
+                        <li class="nav-itemn" id="usuario">
+                            <a id="user" href="/view/paginas/login.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </form>
+
+            </div>
+
+        </div>
+    </nav>
+
+</header>
+
+  <div id="containerformulario">
+    <div id="formularioSImulacion" ng-show="showMenu == true">
+      <h3>Simulaciones</h3>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+
+          <label for="inputState" class="form-label">Tipo de amortización</label>
+          <select id="tipoamortizacion" class="form-select" ng-model="tipoSimulacion">
+            <option  value="">Elige una opción</option>
+            <option value="Lineal">Lineal</option>
+            <option value="Frances">Frances</option>
+            <option value="Americano">Americano</option>
+            <option value="Simple">Simple</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Duración</label>
+          <select id="duracion" class="form-select" ng-model="duracion">
+            <option value="">Años</option>
+          </select>
+        </div>
+
+        <div class="col-4">
+          <label for="inputAddress" class="form-label">numero de meses/años</label>
+          <input type="text" class="form-control" id="numAñosMeses" placeholder="numero de meses/años"
+            ng-model="cantidad">
+        </div>
+
+
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Cantidad</label>
+          <input type="text" class="form-control" id="cantidad" placeholder="0" ng-model="capital">
+        </div>
+
+        <div class="col-md-6">
+          <label for="inputState" class="form-label">plazos de pago de intereses</label>
+          <select id="plazosdepago" class="form-select" ng-model="pago_interese">
+            <option selected>elige una opción</option>
+            <option value="4" ng-hide = "tipoSimulacion =='Americano' || tipoSimulacion =='Simple'">3 meses</option>
+            <option value="3" ng-hide = "tipoSimulacion =='Americano' || tipoSimulacion =='Simple'">4 meses</option>
+            <option value="2" ng-hide = "tipoSimulacion =='Americano' || tipoSimulacion =='Simple'">6 meses</option>
+            <option value="1" >1 año</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">base temporal de la tasa de interés</label>
+          <select id="tasainteres" class="form-select" ng-model="temporal">
+            <option selected>elige una opción</option>
+            <option value="4" ng-show="pago_interese == 4">3 meses</option>
+            <option value="3" ng-show="pago_interese == 3">4 meses</option>
+            <option value="2" ng-show="pago_interese == 2">6 meses</option>
+            <option value="1">1 año</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label">Interés %</label>
+          <input type="text" class="form-control" id="interes" ng-model="intereses" placeholder="0">
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputCity" class="form-label" id="periodoC">Período de carencia</label>
+          <input type="text" class="form-control" id="gabezialdia" placeholder="0" ng-model="periodo">
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" id="tipoPeriodo" class="form-label">Tipo de periodo</label>
+          <select id="tipo_periodo" class="form-select" ng-model="tipo_periodo">
+            <option selected>elige una opción</option>
+            <option>ALDIKOA</option>
+            <option>TOTALA</option>
+          </select>
+        </div>
+
+        <div class="col-12">
+          <button id="btnSimular" class="btn btn-primary" ng-click="simular()">Simular</button>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <!-- /////////////////////////////////////////// -->
+    <table class="table table-striped table-hover" ng-show="showTabla">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>cuota</th>
+          <th>interes</th>
+          <th>amortización</th>
+          <th>amortización acumulada</th>
+          <th>capital que falta amortizar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="fila in simulacion">
+          <td>{{ fila.IndiceLista }}</td>
+          <td>{{ fila.cuota }}</td>
+          <td>{{ fila.intereses }}</td>
+          <td>{{ fila.amortizacion }}</td>
+          <td>{{ fila.amorMeta }}</td>
+          <td>{{ fila.capital }}</td>
+        </tr>
+
+        <tr>
+          <td>
+            <button id="btnvolver" class="btn btn-primary" ng-click="simularVolver()">volver</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="/view/js/navbar.js"></script>
+  <script src="/view/js/logout.js"></script>
+  <script src="/view/lib/jquery-3.6.1.min.js"></script>
+  <script src="/view/js/comprobacionSimulador.js"></script>
+
+</body>
+
+</html>

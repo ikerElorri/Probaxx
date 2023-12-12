@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/view/scss/style.css">
+    <link rel="stylesheet" href="/view/scss/cuenta.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="/view/img/index/logofpzornotza.png">
+    <title>BancaOnline</title>
+
+    <script src="/view/js/cuenta.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light p-1" id="navbar">
+            <div class="container-fluid">
+
+                <a id="navbar-logo" href="/view/index.html">
+                    <img src="/view/img/FP-Zornotza-logo-color.jpg" alt="">
+                </a>
+
+                <a id="log" href="">
+                    <img src="" alt="" style="width: 30px;">
+                </a>
+
+                <button class="navbar-toggler" id="botonnavbar" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/view/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="banOnline" class="nav-link active" href="/view/paginas/banca.html">Banca Online</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/view/paginas/GuriBuruz.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item" id="Admin" style="display:none;">
+                            <a class="nav-link active" href="/view/paginas/bancaAdmin.html">Admin</a>
+                        </li>
+                        <li class="nav-item" id="useer" style="display:none;">
+                            <a class="nav-link active" href="/view/paginas/usuario.html">Cuenta</a>
+                        </li>
+                        <li class="nav-item" id="logout" style="display:none; cursor: pointer">
+                            <a class="nav-link active">Cerrar Sesion</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-itemn" id="usuario">
+                                <a id="user" href="/view/paginas/login.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="contenedor-cuenta">
+
+        <div id="contenedorsidebar">
+
+            <!-- <button id="saca" data-bs-toggle='modal' data-bs-target='#retiro'>Sacar dinero</button>
+            <button id="meter" data-bs-toggle='modal' data-bs-target='#ingreso'>Ingresar dinero</button>
+            <button id="dar" data-bs-toggle='modal' data-bs-target='#tranferir'>Hacer tranferencia</button> -->
+
+            <div id="sidebar">
+                <div class="item-sidebar item-sidebar-arriba" id="botonusuario">
+                    <img src="/view/img/cuenta/usuario.png" alt="">
+                    <p class="texto-sidebar">Usuario</p>
+                </div>
+                <div class="item-sidebar" id="botoningreso">
+                    <img src="/view/img/cuenta/mano.png" alt="">
+                    <p class="texto-sidebar">Ingresar</p>
+                </div>
+                <div class="item-sidebar" id="botonretiro">
+                    <img src="/view/img/cuenta/retiro-de-efectivo.png" alt="">
+                    <p class="texto-sidebar">Retirar</p>
+                </div>
+                <div class="item-sidebar item-sidebar-abajo" id="botontransferencia">
+                    <img src="/view/img/cuenta/transferir.png" alt="">
+                    <p class="texto-sidebar">Transferir</p>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <div id="cuenta-info">
+
+            <div id="contenedor-acciones">
+
+                <!-- sacar -->
+
+                <div id="sacar" class="targetas-acciones">
+                    <h2>Retirada</h2>
+                    <div class="centraracciones">
+                        <select id="opcionessacar" class="desplegablesacciones">
+
+                        </select>
+
+                        <input placeholder="cantidad a retirar" type="text" id="inputRetirar" class="inputacciones">
+                        <button class="boton-acciones" id="retBtn">Cantidad a Retirar</button>
+                    </div>
+                </div>
+
+                <!-- ingresar -->
+
+                <div id="ingresar" class="targetas-acciones">
+                    <h2>Ingreso</h2>
+                    <div class="centraracciones">
+                        <select id="opcionesingresar" class="desplegablesacciones">
+                            <!-- se cargan las cuentas desde js -->
+                        </select>
+                        <div>
+
+                        </div>
+                        <input placeholder="cantidad a ingresar" type="text" id="inputIngresar" class="inputacciones">
+                        <button class="boton-acciones" id="ingBtn">Cantidad a Ingresar</button>
+
+                        <!-- <div id="cantidadingreso"></div>
+                        <button onclick="ingres()">Cantidad a Ingresar</button> -->
+                    </div>
+
+
+                </div>
+
+                <!-- transferir -->
+
+                <div id="tranferencia" class="targetas-acciones">
+                    <h2>Transferencia</h2>
+                    <div class="centraracciones">
+                        <select id="opcionestransferir" class="desplegablesacciones">
+
+                        </select>
+
+
+                        <select id="cuentastransferir" class="desplegablesacciones">
+
+                        </select>
+
+                        <div id="contenedor-input">
+                            <input type="text" placeholder="concepto" id="concepto" class="inputaccionestransferencia">
+                            <input type="text" placeholder="cantidad" id="inputTran" class="inputaccionestransferencia">
+                        </div>
+
+
+
+                        <button class="boton-acciones" id="tranBtn">Cantidad a Transferir</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="infousu" class="targetas-acciones">
+
+            </div>
+
+            <!-- <div class="modal fade" id="retiro" tabindex="-1" aria-labelledby="infoLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="sacar">
+                                    <select id="opcionessacar" onchange=ensenardinerosa()></select>
+                                    <div id="cantidadsacar"></div>
+                                    <button onclick="sac()">Cantidad a Retirar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="modal fade" id="ingreso" tabindex="-1" aria-labelledby="infoLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="ingresar">
+                                    <select id="opcionesingresar" onchange=ensenardineroin()></select>
+                                    <div id="cantidadingreso"></div>
+                                    <button onclick="ingres()">Cantidad a Ingresar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="modal fade" id="tranferir" tabindex="-1" aria-labelledby="infoLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="tranferencia">
+                                    <select id="opcionestransferir" onchange=ensenardinerotransf()></select>
+                                    <div id="cantidadtransf"></div>
+            
+                                    <select id="cuentastransferir"></select>
+                                    <button onclick="tran()">Cantidad a Transferir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div id="update">
+                                <h4>Modificar usuario:</h4>
+                                DNI: <br>
+                                <input type="text" class="dni" id="dni2" disabled="true">
+                                <br>
+                                Nombre:<br>
+                                <input type="text" class="nombre" id="nombre2" disabled="true">
+                                <br>
+                                Apellido:<br>
+                                <input type="text" class="apellido" id="apellido2" disabled="true">
+                                <br>
+                                Contraseña:<br>
+                                <input type="text" class="pasahitza" id="pasahitza2">
+                                <br>
+                                <div class="admin" style="display: none;">
+                                    Tipo de Usuario:<br>
+                                    <select class="tipo" id="tipo2">
+                                        <option value="1">Admin</option>
+                                        <option value="0">Usuario</option>
+                                    </select>
+                                </div>
+
+                                <br><br>
+                                <button id="btnExecUpdate">Confirmar Cambios</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="info" tabindex="-1" aria-labelledby="infoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="cuentasBan">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="inf" tabindex="-1" aria-labelledby="Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div id="movimientos">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link"
+                    href="https://es.linkedin.com/?src=go-pa&trk=sem-ga_campid.18146679037_asid.140850334975_crid.619061882347_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.20271&mcid=6968657504633266178&cid=&gclid=CjwKCAiAheacBhB8EiwAItVO2_nnzyan7iZ_agykHpiYQg7N-rT4asjiRFCRvy2BtlwnZnRXo9U7wBoC54IQAvD_BwE&gclsrc=aw.ds">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="paginas/GuriBuruz.html">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+        </ul>
+        <p>&copy;2022 FpZornotza | All Rights Reserved</p>
+    </footer>
+
+    <script src="/view/js/navbar.js"></script>
+    <script src="/view/js/usuario.js"></script>
+    <script src="/view/js/logout.js"></script>
+    <script src="/view/js/cuenta.js"></script>
+    <script src="/view/lib/jquery-3.6.1.min.js"></script>
+    <script src="/view/js/comprobarInput.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

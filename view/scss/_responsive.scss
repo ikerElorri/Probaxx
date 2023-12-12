@@ -1,0 +1,155 @@
+@import '_variables.scss';
+
+@media (max-width: 1300px) {
+
+    #inforelevante {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedoresinicio {
+        flex-direction: column;
+    }
+
+    .imagen {
+        display: none;
+
+    }
+
+    .contenedoresinicio .contenedoresinicioizq .texto {
+        display: none;
+    }
+
+    .contenedoresinicio .contenedoresinicioder .texto {
+        display: none;
+    }
+
+    .contenedoresinicio {
+        // padding-left: 350px;
+        // padding-right: 350px;
+        width: 70%;
+        margin-top: 50px;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    .info {
+        background-color: $gris-transparente;
+        margin: 10px;
+    }
+
+    #contenedorhipoteca {
+        background-image: url("/view/img/index/hipotecav2.jpg");
+    }
+
+    #contenedorrenting {
+        background-image: url("/view/img/index/rentingv2.jpg");
+    }
+
+    #contenedortargetas {
+        background-image: url("/view/img/index/targetasv2.jpg");
+    }
+
+    #contenedorbizum {
+        background-image: url("/view/img/index/bizumv2.jpg");
+    }
+
+
+}
+
+@media (max-width: 800px){
+    #logincontainer  #login-boxlog{
+        width: 90%;
+
+        #imgLoginlog {
+        width: 250px;
+    }
+    }
+}
+
+@media (max-width: 992px) {
+    #navbarNavDropdown {
+        display: none;
+    }
+
+    #login-box {
+        border: none;
+        width: 100%;
+    }
+
+    #centrar #contenedorTexto {
+        #textoSobreNosotros1 {
+            flex-direction: column;
+
+        }
+
+        #textoSobreNosotros2 {
+            flex-direction: column-reverse;
+        }
+
+        .textoSobreNosotros {
+            .imgSobreNosotros{
+                width: 90%;
+            }
+            .textoSobreNosotros{
+                width: 90%;
+            }
+        }
+    }
+
+
+    header {
+        .navbar {
+            .container-fluid {
+                .collapse {
+                    .navbar-nav {
+                        .nav-item {
+                            background-position: 0% 100%;
+                        }
+                        .nav-item:hover,
+                        .nav-item:focus {
+                            background-size: 115px 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 800px) {
+
+    #sobrenosotrosLogo {
+        display: none;
+    }
+
+    #sobrenosotrosInicio #infoSobrenosotros #textoinicioSobrenosotros #btnSobreNosotros {
+        margin-top: 0px;
+    }
+
+    #sobrenosotrosInicio #infoSobrenosotros #textoinicioSobrenosotros {
+        width: 90%;
+    }
+
+    .contenedoresinicio {
+        width: 100%;
+    }
+
+    #imagenfondo #textoinicio {
+        width: 90%;
+    }
+
+    #imagenfondoGuriBuruz #textoinicioguriburuz {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    #imagenfondo h1 {
+        letter-spacing: 0;
+    }
+}

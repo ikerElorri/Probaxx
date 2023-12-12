@@ -1,0 +1,228 @@
+#contenedor-cuenta {
+    display: flex;
+    height: 89vh;
+
+    #contenedorsidebar {
+        width: 5%;
+        display: flex;
+        align-items: center;
+
+        #sidebar {
+            width: 100%;
+            height: 500px;
+            background-color: rgba(219, 219, 219, 0.69);
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: solid black 2px;
+            cursor: pointer;
+
+
+            .item-sidebar {
+                width: 100%;
+                height: 25%;
+                border: solid black 1px;
+                border-right: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                img {
+                    width: 50px;
+                }
+            }
+
+            .item-sidebar-arriba {
+                border-top: none;
+
+            }
+
+            .item-sidebar-abajo {
+                border-bottom: none;
+            }
+        }
+
+    }
+
+
+
+
+    #cuenta-info {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #contenedor-acciones {
+
+            .targetas-acciones {
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                background-color: rgb(237, 237, 237);
+                border-radius: 10px;
+                border: solid black 1px;
+                width: 500px;
+                height: 300px;
+                display: none;
+
+                .centraracciones {
+                    width: 100%;
+                    height: 85%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+
+
+
+                    .desplegablesacciones {
+                        width: 80%;
+                        border: 0;
+                        border-bottom: 2px solid black;
+                        // border-radius: 25px;
+                        font-size: 18px;
+                        color: black;
+                        background-color: rgb(237, 237, 237);
+                    }
+                    .inputacciones{
+                     width: 80%;
+                     border: 0;
+                     border-bottom: 2px solid black;
+                     // border-radius: 25px;
+                     font-size: 18px;
+                     color: black;
+                     text-align:center;
+                     background-color: rgb(237, 237, 237);
+                     }
+
+                    .inputacciones {
+                        width: 80%;
+                        border: 0;
+                        border-bottom: 2px solid black;
+                        // border-radius: 25px;
+                        font-size: 18px;
+                        color: black;
+                        text-align: center;
+                        background-color: rgb(237, 237, 237);
+                        
+                    }
+
+
+                    #contenedor-input {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+
+
+
+                        .inputaccionestransferencia {
+                            width: 40%;
+                            border: 0;
+                            border-bottom: 2px solid black;
+                            // border-radius: 25px;
+                            font-size: 18px;
+                            color: black;
+                            text-align: center;
+                            background-color: rgb(237, 237, 237);
+                        }
+                    }
+
+
+
+                    .boton-acciones {
+                        border: 0;
+                        width: 250px;
+                        height: 30px;
+                        font-size: 18px;
+                        color: black;
+                        border-radius: 25px;
+                        border: solid black 2px;
+                    }
+                }
+
+            }
+
+        }
+
+        #infousu{
+                align-items: center;
+                justify-content: center;
+                display: block;
+                text-align: center;
+                background-color: rgb(237, 237, 237);
+                border-radius: 10px;
+                border: solid black 1px;
+                width: 500px;
+                margin: 0;
+        }
+
+    }
+
+}
+
+
+@media (max-width: 1300px) {
+
+    #cuenta-info {
+        width: 90% !important;
+    }
+
+    #contenedorsidebar {
+        width: 10% !important;
+    }
+}
+
+@media (max-width: 700px){
+
+    #contenedor-cuenta{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        #contenedorsidebar{
+            width: 90% !important;
+            margin-bottom: 50px;
+
+            #sidebar{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 50px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-radius: 25px;
+
+                .item-sidebar{
+                    flex-direction: row;
+                    border: solid black 1px;
+                    border-right: solid black 1px;
+                    border-top: none;
+                    border-bottom: none;
+                    width: 25%;
+                    height: 100%;
+                }
+
+                .item-sidebar-arriba{
+                    border: none;
+                }
+
+                .item-sidebar-abajo{
+                    border: none;
+                }
+            }
+
+            
+        }
+
+        #cuenta-info{
+            width: 50% !important;
+
+        }
+    }
+
+}

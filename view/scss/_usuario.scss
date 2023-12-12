@@ -1,0 +1,73 @@
+@import '_variables.scss';
+
+#infousu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.usearios {
+    width: $ancho-usearios;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+// .cartasUsuarios {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     align-items: center;
+//     width: 90%;
+//     height: auto;
+//     margin: $margen-cartas-usuarios;
+//     padding: $padding-cartas-usuarios;
+
+// }
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: $margen-usuario-tg;
+    table-layout: fixed;
+    width: $ancho-usuario-tg;
+    background: white;
+}
+
+.tg td {
+    border-color: $negro;
+    border-style: solid;
+    border-width: $ancho-borde-usuario-tg-td;
+    font-family: Arial, sans-serif;
+    font-size: $tamanio-letra-usuario-tg-td;
+    padding: $padding-usuario-tg-td;
+    word-break: normal;
+    
+}
+
+.tg th {
+    border-color: $negro;
+    border-style: solid;
+    border-width: $ancho-borde-usuario-tg-th;
+    font-family: Arial, sans-serif;
+    font-size: $tamanio-letra-usuario-tg-th;
+    font-weight: normal;
+    overflow: hidden;
+    padding: $padding-usuario-tg-th;
+    word-break: normal;
+}
+
+.tg .tg-baqh {
+    text-align: center;
+    vertical-align: top
+}
+
+
+
+// ////////////////////////////////////////////////////////////////////////
+
+

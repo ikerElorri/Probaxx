@@ -1,0 +1,215 @@
+/////////////////////////////////////////////
+////////////////// colores //////////////////
+/////////////////////////////////////////////
+
+$negro: black;
+$gris-claro: rgb(164, 164, 164);
+$gris: grey;
+$gris-transparente: rgba(255, 255, 255, 0.468);
+$blanco: #fff;
+
+
+
+//////////////////////////////////////////////
+/////////////////// navbar ///////////////////
+/// //////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+//////////////////// index ///////////////////
+//////////////////////////////////////////////
+
+$altura-imagen-inicio: 700px;
+$padding-contenedor-titulo-inicio: 20px;
+$ancho-contenedor-titulo-inicio: 50%;
+
+$ancho-sobre-nosotros: 100%;
+$altura-sobre-nosotros: 50px;
+$margen-de-arriba-sobre-nosotros: 50px;
+
+
+//----------- login inicio -----------//
+
+$ancho-caja-login-inicio: 30%;
+$margen-arriba-login-inicio: 20px;
+$padding-login-inicio: 20px 50px;
+$ancho-imagen-login-inicio: 250px;
+$ancho-input-login-inicio: 200px;
+$tamanio-letra-login-inicio: 18px;
+$padding-input-login-inicio: 5px 10px;
+$ancho-boton-login-inicio: 150px;
+$alto-boton-login-inicio: 30px;
+$margen-arriba-boton-login-inicio: 18px;
+
+
+//----------- quienes somos inicio -----------//
+
+$ancho-sobre-nosotros-titulo: 100%;
+
+$tamanio-letra-sobre-nosotros: 18px;
+
+$ancho-sobre-nosotros-imagen: 100%;
+$alto-sobre-nosotros-imagen: 300px;
+$alto-info-sobre-nosotros: 200px;
+
+$padding-texto-inicio-sobre-nosotros: 10px;
+$ancho-texto-inicio-sobre-nosotros: 50%;
+
+$ancho-btn-inicio-sobre-nosotros: 150px;
+$alto-btn-inicio-sobre-nostros: 30px;
+$margen-arriba-btn-inicio-sobre-nosotros: 18px;
+
+
+//----------- contenidos inicio -----------//
+
+$padding-izq-contenedor-inicio: 250px;
+$padding-der-contenedor-inicio: 250px;
+$padding-arriba-contenedor-inicio: 10px;
+
+$margen-arriba-texto-contenedor-inicio: 200px;
+$margen-izq-texto-contenedor-inicio: 200px;
+$ancho-texto-contenedor-inicio: 200px;
+$alto-texto-contenedor-inicio: 100px;
+$margen-izq-texto-contenedor-inicio-derecho: -100px;
+
+$ancho-imagen-contenedor-inicio: 300px;
+$alto-imagen-contenedor-inicio: 350px;
+
+$padding-info: 10px;
+$ancho-info: 400px;
+$alto-info: 100%;
+
+$radio-bordes: 10px;
+$radio-bordes-botones: 25px;
+
+
+
+///////////////////////////////////////////////
+//////////////////// footer ///////////////////
+///////////////////////////////////////////////
+
+
+$margen-arriba-footer: 200px;
+$ancho-footer: 100%;
+$altura-minima-footer: 100px;
+$padding-footer: 20px 50px;
+
+$margin-menu-footer: 10px 0;
+$margen-iconos-footer: 0 10px;
+$transicion-animacion-iconos-footer: 0.5s;
+$animacion-hover-iconos-footer: translateY(-10px);
+
+$tamanio-letra-link-menu-footer: 1.2rem;
+$margen-link-menu-footer: 0 10px;
+$transiscion-menu-link-footer: 0.5s;
+$opacidad-menu-link-footer: 0.75;
+$anchura-de-letras-menu-link-footer: 300;
+
+$opacidad-hover-menu-link: 1;
+
+$margin-footer-texto: 15px 0 10px 0;
+$tamanio-letra-footer-texto: 1rem;
+$anchura-letras-footer-texto: 300;
+
+$ola-distancia-respecto-arriba: -100px;
+$ola-distancia-respecto-izq: 0;
+$ancho-ola: 100%;
+$alto-ola: 100px;
+$tamanio-background_ola: 1000px 100px;
+
+$ola1-zindex: 1000;
+$ola1-opacidad: 1;
+$ola1-distancia-abajo: 0;
+
+$ola2-zindex: 999;
+$ola2-opacidad: 0.5;
+$ola2-distancia-abajo: 10px;
+
+$ola3-zindex: 1000;
+$ola3-opacidad: 0.2;
+$ola3-distancia-abajo: 15px;
+
+$ola4-zindex: 999;
+$ola4-opacidad: 0.7;
+$ola4-distancia-abajo: 20px;
+
+
+//////////////////////////////////////////////
+//////////////////// banca ///////////////////
+//////////////////////////////////////////////
+
+
+$container-formulario: 100%;
+$margen-simulacion: 20px;
+$padding-simulacion: 40px;
+$ancho-simulacion: 70%;
+
+$ancho-tabla-simulacion: 70%;
+
+
+////////////////////////////////////////////////
+//////////////////// usuario ///////////////////
+////////////////////////////////////////////////
+
+
+$margen-arriba-info-usuario: 50px;
+
+$ancho-usearios: 100%;
+
+$margen-cartas-usuarios: 0;
+$padding-cartas-usuarios: 0;
+
+$margen-usuario-tg: 20px;
+$ancho-usuario-tg: 405px;
+
+$ancho-borde-usuario-tg-td: 1px;
+$tamanio-letra-usuario-tg-td: 14px;
+$padding-usuario-tg-td: 10px 5px;
+
+$ancho-borde-usuario-tg-th: 1px;
+$tamanio-letra-usuario-tg-th: 14px;
+$padding-usuario-tg-th: 10px 5px;
+
+
+///////////////////////////////////////////////////////
+//////////////////// Sobre nosotros ///////////////////
+///////////////////////////////////////////////////////
+
+
+$imagenfondoGuriBuruz-ancho: 100%;
+$imagenfondoGuriBuruz-alto: 700px;
+
+$textoinicioguriburuz-padding: 20px;
+$textoinicioguriburuz-ancho: 50%;
+
+$titulo-sobre-nosotros-tamanio-letra: 2rem;
+$titulo-sobre-nosotros-margin: 0;
+$titulo-sobre-nosotros-espaciado: 1rem;
+
+$ancho-contenedorTexto: 70%;
+$margen-arriba-contenedorTexto: 50px;
+
+$ancho-imgSobreNosotros: 30%;
+
+$margen-textoSobreNosotros: 50px;
+$ancho-textoSobreNosotros: 50%;
+
+
+//////////////////////////////////////////////
+//////////////////// login ///////////////////
+//////////////////////////////////////////////
+
+$ancho-caja-login: 30%;
+$margen-arriba-login: 200px;
+$padding-login: 20px 50px;
+
+$ancho-imagen-login: 80%;
+
+$ancho-input-login: 80%;
+$borde-input-login: 0;
+$tamanio-letra-login: 18px;
+$padding-input-login: 5px 10px;
+
+$ancho-boton-login: 60%;
+$alto-boton-login: 30px;
+$margen-arriba-boton-login: 18px;

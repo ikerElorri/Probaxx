@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="/view/js/login.js"></script>
+    <link rel="icon" href="/view/img/index/logofpzornotza.png">
+    <title>uwu BancaOnline</title>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light p-1" id="navbar">
+            <div class="container-fluid">
+
+                <a id="navbar-logo" href="/view/index.html">
+                    <img src="/view/img/FP-Zornotza-logo-color.jpg" alt="">
+                </a>
+
+                <a id="log" href="">
+                    <img src="" alt="" style="width: 30px;">
+                </a>
+
+                <button class="navbar-toggler" id="botonnavbar" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/view/index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a id="banOnline" class="nav-link active" href="/view/paginas/banca.html">Banca Online</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item" id="Admin" style="display:none;">
+                            <a class="nav-link active"  href="/view/paginas/bancaAdmin.html">Admin</a>
+                        </li>
+                        <li class="nav-item" id="useer" style="display:none;">
+                            <a class="nav-link active" href="/view/paginas/usuario.html">Cuenta</a>
+                        </li>
+                        <li class="nav-item" id="logout" style="display:none; cursor: pointer">
+                            <a class="nav-link active">Cerrar Sesion</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-itemn" id="usuario">
+                                <a id="user" href="/view/paginas/login.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light p-1" id="navbar">
+            <div class="container-fluid">
+
+                <a id="navbar-logo" href="../index.html">
+                    <img src="../img/FP-Zornotza-logo-color.jpg" alt="">
+                </a>
+
+                <a id="log" href="">
+                    <img src="" alt="" style="width: 30px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="banca.html">Banca Online</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="GuriBuruz.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item" id="Admin" style="display:none;">
+                            <a class="nav-link active" href="/view/paginas/bancaAdmin.html">Admin</a>
+                        </li>
+                        <li class="nav-item" id="useer" style="display:none;">
+                            <a class="nav-link active" href="/view/paginas/usuario.html">Cuenta</a>
+                        </li>
+                        <li class="nav-item" id="logout" style="display:none;">
+                            <a class="nav-link active">Cerrar Sesion</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-ite">
+                                <a id="user" href="/view/paginas/login.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                        <path fill-rule="evenodd"
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+
+            </div>
+        </nav>
+
+    </header> -->
+
+
+    <div id="imagenfondoGuriBuruz">
+
+        <div id="textoinicioguriburuz">
+            <h1>Sobre Nosotros</h1>
+            <p></p>
+        </div>
+
+    </div>
+
+    <div id="centrar">
+
+        <div id="contenedorTexto">
+            <div class="textoSobreNosotros" id="textoSobreNosotros1">
+                <br>
+                <img class="imgSobreNosotros" src="../img/guriburuz/union.jpg" alt="">
+                <div class="textoSobreNosotros">
+                    <p>El 1 de enero de 2022 inicia la actividad FPZORNOTZA, un banco que surge del proceso de
+                        integración de las tres
+                        Cajas Vascas -BBK, Kutxa y Vital-, las tres únicas accionistas de la nueva entidad, a la que
+                        traspasan su negocio financiero.</p>
+                    <p>FPZORNOTZA nace desde una privilegiada posición en materia de solvencia, con un balance
+                        diversificado,
+                        un nuevo modelo de gobierno corporativo y un indiscutible liderazgo en los territorios en los
+                        que tradicionalmente
+                        desarrollamos nuestra actividad. Somos una entidad comprometida con las personas y con el
+                        desarrollo económico y social como principal objetivo.</p>
+                </div>
+
+
+            </div>
+
+            <br>
+
+            <div class="textoSobreNosotros" id="textoSobreNosotros2">
+                <br>
+                <div class="textoSobreNosotros">
+                    <p>Nuestro foco estratégico se centra en un modelo de banca local, y las entidades que formamos
+                        parte del Grupo compartimos procesos,
+                        políticas y servicios centrales comunes, que permiten alcanzar economías de escala y un
+                        beneficio sostenible. Nuestra prioridad son nuestros clientes,
+                        puesto que basamos el modelo de negocio en una relación de cercanía, confianza y relación a
+                        largo plazo con las personas y pymes de nuestro entorno.</p>
+                    <p>En FPZORNOTZA mantenemos el compromiso de devolver a la sociedad parte del beneficio recurrente
+                        obtenido, a través de las Obras Sociales
+                        que desarrollamos en cada uno de los territorios.</p>
+                </div>
+                <img class="imgSobreNosotros" src="../img/guriburuz/niña.jpg" alt="">
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.facebook.com/">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.twitter.com">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link"
+                    href="https://es.linkedin.com/?src=go-pa&trk=sem-ga_campid.18146679037_asid.140850334975_crid.619061882347_kw.linkedin_d.c_tid.kwd-148086543_n.g_mt.e_geo.20271&mcid=6968657504633266178&cid=&gclid=CjwKCAiAheacBhB8EiwAItVO2_nnzyan7iZ_agykHpiYQg7N-rT4asjiRFCRvy2BtlwnZnRXo9U7wBoC54IQAvD_BwE&gclsrc=aw.ds">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="../index.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+        </ul>
+        <p>&copy;2022 FpZornotza | All Rights Reserved</p>
+    </footer>
+
+    <script src="/view/js/logout.js"></script>
+    <script src="/view/js/navbar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>

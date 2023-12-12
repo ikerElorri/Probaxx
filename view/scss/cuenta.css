@@ -1,0 +1,171 @@
+#contenedor-cuenta {
+  display: flex;
+  height: 89vh;
+}
+#contenedor-cuenta #contenedorsidebar {
+  width: 5%;
+  display: flex;
+  align-items: center;
+}
+#contenedor-cuenta #contenedorsidebar #sidebar {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(219, 219, 219, 0.69);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: solid black 2px;
+  cursor: pointer;
+}
+#contenedor-cuenta #contenedorsidebar #sidebar .item-sidebar {
+  width: 100%;
+  height: 25%;
+  border: solid black 1px;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contenedor-cuenta #contenedorsidebar #sidebar .item-sidebar img {
+  width: 50px;
+}
+#contenedor-cuenta #contenedorsidebar #sidebar .item-sidebar-arriba {
+  border-top: none;
+}
+#contenedor-cuenta #contenedorsidebar #sidebar .item-sidebar-abajo {
+  border-bottom: none;
+}
+#contenedor-cuenta #cuenta-info {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contenedor-cuenta #cuenta-info #contenedor-acciones .targetas-acciones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+  border: solid black 1px;
+  width: 500px;
+  height: 300px;
+  display: none;
+}
+#contenedor-cuenta #cuenta-info #contenedor-acciones .targetas-acciones .centraracciones {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#contenedor-cuenta #cuenta-info #contenedor-acciones .targetas-acciones .centraracciones .desplegablesacciones {
+  width: 80%;
+  border: 0;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  color: black;
+  background-color: rgb(237, 237, 237);
+}
+#contenedor-cuenta #cuenta-info #contenedor-acciones .targetas-acciones .centraracciones .inputacciones {
+  width: 80%;
+  border: 0;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  background-color: rgb(237, 237, 237);
+}
+#contenedor-cuenta #cuenta-info #contenedor-acciones .targetas-acciones .centraracciones .inputacciones {
+  width: 80%;
+  border: 0;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  background-color: rgb(237, 237, 237);
+}
+#contenedor-cuenta #cuenta-info #contenedor-acciones .targetas-acciones .centraracciones #contenedor-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#contenedor-cuenta #cuenta-info #contenedor-acciones .targetas-acciones .centraracciones #contenedor-input .inputaccionestransferencia {
+  width: 40%;
+  border: 0;
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  background-color: rgb(237, 237, 237);
+}
+#contenedor-cuenta #cuenta-info #contenedor-acciones .targetas-acciones .centraracciones .boton-acciones {
+  border: 0;
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  color: black;
+  border-radius: 25px;
+  border: solid black 2px;
+}
+#contenedor-cuenta #cuenta-info #infousu {
+  align-items: center;
+  justify-content: center;
+  display: block;
+  text-align: center;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+  border: solid black 1px;
+  width: 500px;
+  margin: 0;
+}
+
+@media (max-width: 1300px) {
+  #cuenta-info {
+    width: 90% !important;
+  }
+  #contenedorsidebar {
+    width: 10% !important;
+  }
+}
+@media (max-width: 700px) {
+  #contenedor-cuenta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contenedor-cuenta #contenedorsidebar {
+    width: 90% !important;
+    margin-bottom: 50px;
+  }
+  #contenedor-cuenta #contenedorsidebar #sidebar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius: 25px;
+  }
+  #contenedor-cuenta #contenedorsidebar #sidebar .item-sidebar {
+    flex-direction: row;
+    border: solid black 1px;
+    border-right: solid black 1px;
+    border-top: none;
+    border-bottom: none;
+    width: 25%;
+    height: 100%;
+  }
+  #contenedor-cuenta #contenedorsidebar #sidebar .item-sidebar-arriba {
+    border: none;
+  }
+  #contenedor-cuenta #contenedorsidebar #sidebar .item-sidebar-abajo {
+    border: none;
+  }
+  #contenedor-cuenta #cuenta-info {
+    width: 50% !important;
+  }
+}/*# sourceMappingURL=cuenta.css.map */

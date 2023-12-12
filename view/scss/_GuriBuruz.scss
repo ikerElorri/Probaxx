@@ -1,0 +1,110 @@
+@import '_variables.scss';
+
+#imagenfondoGuriBuruz {
+    width: $imagenfondoGuriBuruz-ancho;
+    height: $imagenfondoGuriBuruz-alto;
+    background-image: url("../img/GuriBuruz.jpg");
+    color: $negro;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    #textoinicioguriburuz{
+        background-color: $blanco;
+        padding: $textoinicioguriburuz-padding;
+        width: $textoinicioguriburuz-ancho;
+    }
+
+
+
+    h1{
+        font-family: "Century Gothic", 'Lato', sans-serif;
+        font-size: $titulo-sobre-nosotros-tamanio-letra;
+        margin: $titulo-sobre-nosotros-margin;
+        letter-spacing: $titulo-sobre-nosotros-espaciado;
+       
+	
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+
+// #imagenfondo {
+//     width: 100%;
+//     height: 700px;
+//     background-image: url("../img/imageninicio.jpg");
+//     color: black;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     text-align: center;
+
+//     #textoinicio{
+//         background-color: white;
+//         padding: 20px;
+//         width: 50%;
+//     }
+
+//     h1{
+        
+//         font-size: 2rem;
+//         margin: 0;
+//         letter-spacing: 1rem;
+//     //     text-transform: uppercase;
+// 	// background: linear-gradient(to right, #600641  0%, #3055d0 100%);
+// 	// -webkit-background-clip: text;
+// 	// -webkit-text-fill-color: transparent;
+	
+//     }
+
+
+
+
+
+#centrar {
+    display: flex;
+    justify-content: center;
+
+    #contenedorTexto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: $ancho-contenedorTexto;
+        margin-top: $margen-arriba-contenedorTexto;
+
+        .textoSobreNosotros {
+            font-family: "Century Gothic", 'Lato', sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+
+            .imgSobreNosotros {
+                width: $ancho-imgSobreNosotros;
+                border-radius: $radio-bordes;
+            }
+
+            .textoSobreNosotros {
+                display: flex;
+                flex-direction: column;
+                margin: $margen-textoSobreNosotros;
+                width: $ancho-textoSobreNosotros;
+
+
+            }
+
+        }
+    }
+}

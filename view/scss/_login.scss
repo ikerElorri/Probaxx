@@ -1,0 +1,56 @@
+@import '_variables.scss';
+
+#logincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #login-boxlog {
+        border: 1px solid $negro;
+        border-radius: $radio-bordes;
+        width: $ancho-caja-login;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: $margen-arriba-login;
+        padding: $padding-login;
+    }
+
+    #login-boxlog #imgLoginlog {
+        width: $ancho-imagen-login;
+    }
+
+    #login-boxlog .formlog .itemlog input {
+        width: $ancho-input-login;
+        border: $borde-input-login;
+        border-bottom: 2px solid $negro;
+        font-size: $tamanio-letra-login;
+        color: $negro;
+        padding: $padding-input-login;
+    }
+
+    #login-boxlog .formlog .itemlog i {
+        color: $negro;
+        font-size: $tamanio-letra-login;
+    }
+
+    #login-boxlog button {
+        border: $borde-input-login;
+        width: $ancho-boton-login;
+        height: $alto-boton-login;
+        margin-top: $margen-arriba-boton-login;
+        font-size: $tamanio-letra-login;
+        color: black;
+        border-radius: $radio-bordes-botones;
+        border: solid $negro 2px;
+        // background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%); // * Agrega un color degradado al botón * /
+    }
+
+
+
+
+
+    a {
+        color: $negro !important;
+        text-decoration: none !important;
+    }
+}

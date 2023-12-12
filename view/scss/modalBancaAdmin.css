@@ -1,0 +1,94 @@
+header .navbar .container-fluid #navbar-logo img {
+  width: 190px;
+}
+header .navbar .container-fluid .collapse {
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+header .navbar .container-fluid .collapse .navbar-nav .nav-item:hover,
+header .navbar .container-fluid .collapse .navbar-nav .nav-item:focus {
+  background-size: 100% 2px;
+}
+
+#volverinicio a {
+  text-decoration: none;
+  color: black;
+}
+
+.usearios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartasUsuarios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  width: 90% !important;
+  height: 530px;
+  margin: 0;
+  padding: 0;
+  background: #5c0956;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 20px;
+  table-layout: fixed;
+  width: 405px;
+  background: white;
+}
+
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg .tg-baqh {
+  text-align: center;
+  vertical-align: top;
+}
+
+#mostrarInsert {
+  text-decoration: none;
+  color: #fff;
+  background: #5c0956;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}/*# sourceMappingURL=modalBancaAdmin.css.map */

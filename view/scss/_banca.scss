@@ -1,0 +1,30 @@
+@import '_variables.scss';
+
+#containerformulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $container-formulario;
+    flex-direction: column;
+    overflow-x: scroll;
+
+    #formularioSImulacion {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid $negro 2px;
+        border-radius: $radio-bordes;
+        margin: $margen-simulacion;
+        padding: $padding-simulacion;
+        width: $ancho-simulacion;
+        // height: 500px;
+    }
+
+    .table {
+        width: $ancho-tabla-simulacion;
+       
+    }
+
+}

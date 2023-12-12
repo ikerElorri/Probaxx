@@ -1,0 +1,215 @@
+@import '_variables.scss';
+header {
+    .navbar {
+        .container-fluid {
+            #navbar-logo {
+                img {
+                    width: 190px;
+                }
+
+            }
+
+            .collapse {
+                justify-self: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+
+                .navbar-nav {
+
+                    .nav-item {
+
+
+                        text-decoration: none;
+                        background-image: linear-gradient(currentColor, currentColor);
+                        background-position: 50% 100%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 2px;
+                        transition: background-size .3s;
+                    }
+
+                    .nav-item:hover,
+                    .nav-item:focus {
+                        background-size: 100% 2px;
+                    }
+
+
+
+
+                }
+            }
+        }
+    }
+}
+
+
+#volverinicio a {
+    text-decoration: none;
+    color: black;
+}
+
+.usearios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cartasUsuarios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+	width: 90% !important;
+    height: 530px;
+    margin: 0;
+    padding: 0;
+    background: #5c0956;
+
+}
+
+// .card {
+//     position: relative;
+//     width: 300px;
+//     background: #fff;
+//     border-radius: 5px;
+//     overflow: hidden;
+//     transition: .5s;
+//     margin: 15px 20px;
+// }
+
+// .card:hover {
+//     box-shadow: 0 5px 15px rgba(3, 89, 92, .5);
+//     transform: translateY(-15px);
+// }
+
+// .card .head {
+//     height: 125px;
+//     width: 100%;
+//     position: relative;
+// }
+
+// .card .head .circle {
+//     position: absolute;
+//     width: 300px;
+//     height: 100px;
+//     background: #0b6f72;
+//     bottom: 0;
+// }
+
+// .card .head .img {
+//     width: 150px;
+//     height: 150px;
+//     position: absolute;
+//     background: #fff;
+//     padding: 5px;
+//     border-radius: 50%;
+//     bottom: -30%;
+//     left: 50%;
+//     transform: translate(-50%);
+// }
+
+// .card .head .img img {
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 50%;
+//     object-fit: cover;
+// }
+
+
+// .card .description {
+//     height: 200px;
+//     padding: 40px 20px 20px 20px;
+//     border-bottom: solid 1px rgba(6, 74, 76, .18);
+//     text-align: center;
+// }
+
+// .card .description h3 {
+//     color: #05383a;
+// }
+
+// .card .description h4 {
+//     color: #1c5a5c;
+// }
+
+// .card .description p {
+//     margin-top: 20px;
+//     font-size: 15px;
+// }
+
+
+// .card .contact {
+//     width: 100%;
+//     height: 75px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .card .contact .btn {
+//     text-decoration: none;
+//     color: #fff;
+//     background: #157579;
+//     padding: 5px 20px;
+//     border-radius: 5px;
+//     transition: .3s;
+// }
+
+// .card .contact .btn:hover {
+
+//     background: #0b6164;
+
+// }
+
+
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 20px;
+    table-layout: fixed;
+    width: 405px;
+    background: white;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-baqh {
+    text-align: center;
+    vertical-align: top
+}
+
+
+#mostrarInsert {
+    text-decoration: none;
+    color: #fff;
+    background: #5c0956;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
