@@ -1,5 +1,5 @@
 ---
-deployment :
+deployment:
     tasks:
     - export DEPLOYPATH=/home/ikerzerb/public_html
     - rm -RF $DEPLOYPATH/*
