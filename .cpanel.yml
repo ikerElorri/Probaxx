@@ -1,0 +1,8 @@
+---
+deployment:
+    tasks:
+    - export DEPLOYPATH=/home/ikerzerb/public_html
+    - rm -RF $DEPLOYPATH/*
+    - cp -RF model $DEPLOYPATH
+    - cp -RF view $DEPLOYPATH
+    - cp -RF controller $DEPLOYPATH
