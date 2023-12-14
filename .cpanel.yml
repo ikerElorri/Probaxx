@@ -1,7 +1,7 @@
 ---
 deployment:
     tasks:
-    - export DEPLOYPATH=/home/ikerzerb/public_html
+    - export DEPLOYPATH=/home/ikerzerb/repositorio/Probaxx
     - rm -RF $DEPLOYPATH/*
     - cp -RF model $DEPLOYPATH
     - cp -RF view $DEPLOYPATH
